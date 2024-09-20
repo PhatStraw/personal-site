@@ -1,100 +1,141 @@
-import Image from "next/image";
+import { Github, Mail, Twitter } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
+    <div className="min-h-screen bg-black text-white px-8 font-mono">
+      <main className="max-w-2xl mx-auto">
+        <h1 className="text-4xl font-bold mb-4">PS.</h1>
+
+        <p className="mb-8">
+          Builder with a passion for creating impactful consumer products.
+          Currently focused on developing social platforms that aim to add
+          positivity to the world.
+        </p>
+
+        <h2 className="text-2xl font-bold mb-4">projects</h2>
+
+        <p className="mb-4">
+          most of my projects on{" "}
+          <a
+            href="https://github.com/PhatStraw"
+            className="text-green-400 hover:underline"
+          >
+            github
+          </a>{" "}
+          are private. If you&apos;re interested in what I&apos;m working on,
+          reach out to{" "}
+          <a
+            href="mailto:phatstraws@gmail.com"
+            className="text-green-400 hover:underline"
+          >
+            me
+          </a>
+          .
+        </p>
+
+        <p className="mb-4">
+          some interesting projects that are public of note are:
+        </p>
+
+        <ul className="list-disc list-inside mb-8">
           <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.js
-            </code>
+            <a
+              href="https://github.com/PhatStraw/safe-monitor"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-green-400 hover:underline"
+            >
+              Safe Monitor:
+            </a>{" "}
+            a web app that helps parents monitor their children&apos;s online
+            activities.{" "}
+            <a
+              href="https://safe-monitor.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-green-400 hover:underline"
+            >
+              Live Demo
+            </a>
+          </li>
+          <li className="mb-2">
+            <a
+              href="https://github.com/PhatStraw/Pump-fun-bundler"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-green-400 hover:underline"
+            >
+              Pump-fun-bundler:
+            </a>{" "}
+            The easiest way to create and bundle up to 4 wallets for Pump.fun
+            token launches.
+          </li>
+          <li>
+            <span className="text-green-400">Smart Audit:</span> a tool for
+            auditing smart contracts, available at{" "}
+            <a
+              href="https://github.com/PhatStraw/smart-audit"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-green-400 hover:underline"
+            >
+              GitHub
+            </a>{" "}
+            and{" "}
+            <a
+              href="https://smart-audit-xi.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-green-400 hover:underline"
+            >
+              Live Demo
+            </a>
             .
           </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+          <li className="mb-2">
+            <a
+              href="https://github.com/PhatStraw/ask-gary-ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-green-400 hover:underline"
+            >
+              Ask Gary Tan:
+            </a>{" "}
+            an AI tool for conversating with and getting insights from Garry
+            Tan.
+          </li>
+        </ul>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
+        <h2 className="text-2xl font-bold mb-4">connect</h2>
+
+        <div className="flex space-x-4">
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            href="https://github.com/PhatStraw"
             target="_blank"
             rel="noopener noreferrer"
+            className="text-white hover:text-green-400"
           >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
+            <Github size={24} />
           </a>
           <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            href="mailto:phatstraws@gmail.com"
+            className="text-white hover:text-green-400"
+          >
+            <Mail size={24} />
+          </a>
+          <a
+            href="https://x.com/PhatStraws"
             target="_blank"
             rel="noopener noreferrer"
+            className="text-white hover:text-green-400"
           >
-            Read our docs
+            <Twitter size={24} />
           </a>
         </div>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
+      <footer className="mt-16 text-center text-sm text-gray-500">
+        © 2024 Phat
       </footer>
     </div>
   );
