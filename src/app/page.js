@@ -34,7 +34,7 @@ export default function Home() {
         </p>
 
         <p className="mb-4">
-          some interesting projects that are public of note are:
+          some interesting projects that are public:
         </p>
 
         <ul className="list-disc list-inside mb-8">
